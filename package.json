@@ -1,0 +1,30 @@
+{
+  "name": "lab-typescript-read-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "homepage": "https://github.com/Morente5/lab-typescript-read-books#readme",
+  "author": "Alejandro Morente <morente5@hotmail.es>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morente5/lab-typescript-read-books.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Morente5/lab-typescript-read-books/issues"
+  },
+  "scripts": {
+    "start": "npm run copy && run-p transpile devserver",
+    "copy": "copyfiles --flat src/**/*.{html,css} transpiled",
+    "transpile": "tsc",
+    "devserver": "lite-server -c bs-config.json"
+  },
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.1.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.0.3"
+  }
+}
